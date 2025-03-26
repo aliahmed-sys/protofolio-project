@@ -56,7 +56,7 @@ nav a{
 nav a:hover,
 nav a.active{
     color: #b74b4b;
-    border-bottom: 3px soild #b74b4b ;
+    border-bottom: 3px solid #b74b4b ;
 }
 @media(max-width:995px){
     nav{
@@ -70,7 +70,7 @@ nav a.active{
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
         background-color: #161616;
-        border-top: 0.1rem solid rgba(0, 0, 0, 1);
+        border-top: 0.1rem solid rgba(0, 0, 0,0.1);
     }
     nav.active{
         display: block;
@@ -144,6 +144,7 @@ nav a.active{
         border-radius: 50%;
         margin: 3rem 1.5rem 3rem 0;
         transition: 0.3s ease;
+        color: #b74b4b;
 
     }
     .social-icons a:hover{
@@ -169,7 +170,7 @@ nav a.active{
 
     }
     .btn:hover{
-        transform: scale(1.03);
+        transform: scale3d(1.03);
         background-color: #b74b4b;
         color: black;
         box-shadow: 0 0 25px #b74b4b;
@@ -194,9 +195,10 @@ nav a.active{
         background-color: black;
         position: absolute;
         width: calc(100% + 8px);
-        height:-8 ;
+        height: 100%;
+        border-left: 3px solid black;
+        right: -8;
         animation: cursor 0.6s infinite;
-
 
     }
     @keyframes cursor {
